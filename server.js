@@ -28,7 +28,7 @@ app.get('/projectData', (req, res)=>{
     res.send(projectData);
 })
 
-// Add a POST route that adds incoming data to projectData
+// Add a POST route that adds incoming data to projectData (data from client to server)
 app.post('/addData', (req, res)=>{
     const newData = req.body;
     const newEntry = {
